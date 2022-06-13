@@ -86,7 +86,7 @@ def smodbus03or04(recvdata, valueformat=0, intsigned=False):
 if __name__ == '__main__':
     slaveadd = 1
     startreg = 0
-    regnums = 1
+    regnums = 5
     send_data = mmodbus03or04(slaveadd, startreg, regnums)
     print("send data : ", send_data.hex())
     com = serial.Serial("com1", 9600, timeout=0.8)
